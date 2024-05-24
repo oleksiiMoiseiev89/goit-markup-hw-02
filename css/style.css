@@ -9,30 +9,42 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
 a {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  text-decoration: none;
+  color: #2e2f42;
 }
-.header {
+li {
+  list-style-type: none;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   width: 100%;
+  max-width: 1128px;
   height: 72px;
-  top: 0;
-  left: 0;
   background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
-  width: 100%;
-  max-width: 1128px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.header-inner {
+.nav-title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  font-weight: 500;
   padding: 24px 0;
 }
 
@@ -44,6 +56,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 70px;
 }
 
 .color-logo {
@@ -54,9 +67,14 @@ a {
   color: #f4f4fd;
 }
 
-.nav {
+.nav-inner {
+  display: flex;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  margin-right: 220px;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .nav-link {
@@ -74,9 +92,8 @@ a {
   border-radius: 2px;
 }
 
-a {
-  text-decoration: none;
-  color: #2e2f42;
+.contacts-block {
+  display: flex;
 }
 
 .contacts {
@@ -85,35 +102,43 @@ a {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  padding: 0 20px;
+  padding: 0 40px;
   color: #434455;
+}
+
+.contacts:last-child {
+  padding-right: 0;
 }
 
 .contacts:hover {
   color: #404bbf;
 }
 
-.section-inner {
+.main-page {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-intro {
   height: 600px;
   width: 100%;
   background-color: #2e2f42;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.intro-inner {
-  width: 496px;
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
-}
-
 h1 {
+  margin: 0 auto;
+  margin-top: 188px;
   font-weight: 700;
   font-size: 56px;
   line-height: 107%;
   letter-spacing: 0.02em;
   color: #fff;
+  text-align: center;
+  width: 496px;
+  height: 120px;
 }
 
 .btn {
@@ -139,13 +164,26 @@ h1 {
 }
 
 .methods {
+  margin: 0 auto;
   width: 100%;
   height: auto;
   background: #fff;
 }
 
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  padding-top: 120px;
+}
+
 .methods-inner {
-  margin: 120px 0;
+  margin: 120px auto;
+
   width: 1128px;
   height: auto;
   display: flex;
@@ -164,7 +202,7 @@ h1 {
   margin-right: 0;
 }
 
-.methods-title {
+.methods-subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -186,18 +224,7 @@ h1 {
 .team {
   background-color: #f4f4fd;
   width: 100%;
-  height: auto;
-  padding: 120px 0;
-}
-
-.team-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 111%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
+  height: 732px;
 }
 
 .team-block {
@@ -215,6 +242,7 @@ h1 {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
+  text-align: center;
 }
 .team-inner:first-child {
   margin-left: 0;
@@ -251,17 +279,47 @@ h1 {
   color: #434455;
 }
 
+.portfolio {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.portfolio-block {
+  margin: 0 auto;
+  margin-top: 72px;
+
+  width: 1128px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio-inner {
+  border: 1px solid #e7e9fc;
+  width: 360px;
+  height: 420px;
+  margin-bottom: 48px;
+}
+
+.portfolio-name,
+.portfolio-app {
+  text-align: start;
+  margin-left: 16px;
+}
+
 .foot {
   width: 100%;
   height: 312px;
   background-color: #2e2f42;
 }
-
-.footer-item {
-  width: 264px;
+.foot-block {
+  width: 1128px;
   height: 112px;
   padding-top: 100px;
   padding-bottom: 100px;
+  margin: 0 auto;
 }
 
 .footer-text {
@@ -272,4 +330,6 @@ h1 {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  height: 72px;
 }
