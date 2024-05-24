@@ -81,11 +81,11 @@ li {
   padding: 0 20px;
 }
 
-.nav-link:hover {
+.nav-info:hover {
   color: #404bbf;
 }
 
-.nav-link:first-child:active {
+.nav-info-first:first-child:active {
   color: #404bbf;
   border-bottom: 4px solid;
   width: 48px;
