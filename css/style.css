@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   color: #434455;
   margin: 0;
+  background-color: #fff;
 }
 
 * {
@@ -34,6 +35,7 @@ li {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  text-transform: capitalize;
   width: 100%;
   max-width: 1128px;
   height: 72px;
@@ -81,6 +83,10 @@ li {
   padding: 0 20px;
 }
 
+.nav-info:focus {
+  color: #404bbf;
+}
+
 .nav-info:hover {
   color: #404bbf;
 }
@@ -91,13 +97,14 @@ li {
   width: 48px;
   border-radius: 2px;
 }
-
+.address-title {
+  font-style: normal;
+}
 .contacts-block {
   display: flex;
 }
 
 .contacts {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -128,7 +135,7 @@ li {
   align-items: center;
 }
 
-h1 {
+.intro-title {
   margin: 0 auto;
   margin-top: 188px;
   font-weight: 700;
@@ -160,6 +167,9 @@ h1 {
 }
 
 .btn:hover {
+  background-color: #404bbf;
+}
+.btn:focus {
   background-color: #404bbf;
 }
 
