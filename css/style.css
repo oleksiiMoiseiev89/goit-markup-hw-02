@@ -189,6 +189,7 @@ li {
   text-align: center;
   color: #2e2f42;
   padding-top: 120px;
+  text-transform: capitalize;
 }
 
 .methods-inner {
